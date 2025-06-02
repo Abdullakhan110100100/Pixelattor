@@ -20,7 +20,7 @@ For `Role name` put `PixelatorRole`  then Create the role
 Click `PixelatorRole`  
 Under `Permissions Policy` we need to add permissions and it will be an `inline policy`  
 Click `JSON`  and delete the contents of the code box entirely.  
-Load this link in a new tab (need to add my own.json here) # bruh add  
+Load this link in a new tab (https://github.com/Abdullakhan110100100/Pixelattor/blob/main/lambda_policy.json) 
 Copy the entire contents into your clipboard and paste into the previous permissions policy code editor box  
 Locate the words `REPLACEME` there should be `4` occurrences, 2 each for the source and processed buckets .. and for each of those one for the bucket and another for the objects in that bucket.  
 Replace the term `REPLACEME` with the name you picked for your buckets above.
@@ -67,8 +67,8 @@ Create a folder my_lambda_deployment
 Move into that folder
 create a folder called lambda  
 Move into that folder
-Create a file called `lambda_function.py` and paste in the code for the lambda `pixelator` function (add file for lambda function) then save #bruh 
-Download this file (add code to the compressed PIL file) into that folder #bruh
+Create a file called `lambda_function.py` and paste in the code for the lambda `pixelator` function (https://github.com/Abdullakhan110100100/Pixelattor/blob/main/lambda_function.py) then save 
+Download this file (https://github.com/Abdullakhan110100100/Pixelattor/blob/main/Pillow-9.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl) into that folder 
 run `unzip Pillow-9.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl` and then `rm Pillow-9.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl`  
 These are the Pillow module files ... required for image manipulation in Python 3.9 (which is what the lambda function will be using)  
 From the same folder, run `zip -r ../my-deployment-package.zip .` which will create a lambda function zip, containing all these files in the parent directory.  
@@ -130,6 +130,6 @@ Open them one by one, starting with `8x8` and finally `64x64` in order ... notic
 
 
 # Conclusion
-We created an event driven pixelator that will run everytime an image (not sure what will happen if any other object is uploaded since I only tested images) is uploaded to the source bucket and then a lambda function is triggered that will run and generate the different images for the different pixels and upload them to the destination bucket. Here is the original image I uploaded (path to original image) and here are the images uploaded into the destination bucket (Path to destination bucket) # bruh
+We created an event driven pixelator that will run everytime an image (not sure what will happen if any other object is uploaded since I only tested images) is uploaded to the source bucket and then a lambda function is triggered that will run and generate the different images for the different pixels and upload them to the destination bucket. Here is the original image I uploaded ([original image](https://github.com/Abdullakhan110100100/Pixelattor/blob/main/Images/Images_original_processed/original.jpg)) and here are the images uploaded into the destination bucket (Various pixelated images 8X8 https://github.com/Abdullakhan110100100/Pixelattor/blob/main/Images/Images_original_processed/pixelated-8x8-aotm.jpg,  16X16 https://github.com/Abdullakhan110100100/Pixelattor/blob/main/Images/Images_original_processed/pixelated-16x16-aotm.jpg, 32X32 https://github.com/Abdullakhan110100100/Pixelattor/blob/main/Images/Images_original_processed/pixelated-32x32-aotm.jpg, 48X48 https://github.com/Abdullakhan110100100/Pixelattor/blob/main/Images/Images_original_processed/pixelated-48x48-aotm.jpg ) 
 
 
