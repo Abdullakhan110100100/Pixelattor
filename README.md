@@ -129,6 +129,8 @@ Select each of the pixelated versions of the image ... you should have 5 (`8x8`,
 Click `Open`  
 You browser will either open or save all of the images  
 Open them one by one, starting with `8x8` and finally `64x64` in order ... notice how they are the same image, but less and less pixelated :)  
+![Source bucket](https://github.com/user-attachments/assets/f7d976a5-3537-49ad-a256-a6f06c3f2f53)
+![Destination bucket](https://github.com/user-attachments/assets/2918d0d4-a47c-4828-8f87-e3e8647fe25d)
 
 
 # Conclusion
