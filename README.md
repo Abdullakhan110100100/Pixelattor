@@ -134,11 +134,18 @@ Open them one by one, starting with `8x8` and finally `64x64` in order ... notic
 
 
 # Conclusion
-We created an event driven pixelator that will run everytime an image (not sure what will happen if any other object is uploaded since I only tested images) is uploaded to the source bucket and then a lambda function is triggered that will run and generate the different images for the different pixels and upload them to the destination bucket. Here is the original image I uploaded l![original](https://github.com/user-attachments/assets/b59d43aa-5fae-4e30-b07b-e7aafe8df475) and here are the images uploaded into the destination bucket (Various pixelated images) 
-![pixelated-8x8-aotm](https://github.com/user-attachments/assets/474b133b-3d4c-448d-a24b-7b080b64af7f)
-![pixelated-16x16-aotm](https://github.com/user-attachments/assets/f749330d-71e2-4ef6-b2c2-99db2154efdf)
-![pixelated-32x32-aotm](https://github.com/user-attachments/assets/4785c7b3-2fcc-486e-8e8a-201e9cef4b05)
-![pixelated-48x48-aotm](https://github.com/user-attachments/assets/3f70fa1b-0a35-4ae5-aafe-b09f0624bcd9)
+We created an event-driven pixelator that will run every time an image (not sure what will happen if any other object is uploaded since I only tested images) is uploaded to the source bucket. Then a Lambda function is triggered that will run and generate different images for the different pixels and upload them to the destination bucket.
+
+Here is the original image I uploaded:
+
+![original](https://github.com/user-attachments/assets/b59d43aa-5fae-4e30-b07b-e7aafe8df475)
+
+Below are the pixelated versions generated and uploaded to the destination bucket:
+
+![pixelated-8x8-aotm](https://github.com/user-attachments/assets/474b133b-3d4c-448d-a24b-7b080b64af7f)  
+![pixelated-16x16-aotm](https://github.com/user-attachments/assets/f749330d-71e2-4ef6-b2c2-99db2154efdf)  
+![pixelated-32x32-aotm](https://github.com/user-attachments/assets/4785c7b3-2fcc-486e-8e8a-201e9cef4b05)  
+![pixelated-48x48-aotm](https://github.com/user-attachments/assets/3f70fa1b-0a35-4ae5-aafe-b09f0624bcd9)  
 ![pixelated-64x64-aotm](https://github.com/user-attachments/assets/86873371-8e28-46b8-8fb2-c43cb0bdb221)
 
 
